@@ -1,0 +1,38 @@
+services:
+  caddy:
+    image: caddy:2.7.6-alpine
+    container_name: caddy
+    restart: always
+    env_file: .env
+    depends_on:
+      - wordpress
+    ports:
+      - 80:80
+      - 443:443
+      - 443:443/udp
+    volumes:
+      - ./caddy/caddy_data:/data
+      - ./caddy/caddy_config:/config
+      - ./caddy/Caddyfile:/etc/caddy/Caddyfile
+      - ./wordpress/html:/var/www/html
+ 
+  wordpress:
+    image: wordpress:php8.3-fpm-alpine
+    container_name: wordpress
+    restart: always
+    env_file: .env
+    depends_on:
+      - db
+    volumes:
+      - ./wordpress/html:/var/www/html
+      - ./wordpress/php.ini:/usr/local/etc/php/conf.d/php.ini
+      - ./wordpress/zz-docker.conf:/usr/local/etc/php-fpm.d/zz-docker.conf
+
+  db:
+    image: mariadb:10.11
+    container_name: db
+    env_file: .env
+    restart: always
+    volumes:
+      - ./wordpress/mysql:/var/lib/mysql
+      - ./wordpress/mariadb.cnf:/etc/mysql/conf.d/mariadb.cnf
