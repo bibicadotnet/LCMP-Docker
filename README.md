@@ -4,7 +4,7 @@
 ## Cài đặt
 Trỏ DNS A về IP của VPS (domain.com và www.domain.com )
 
-<a href="https://bibica.net/wp-content/uploads/2024/07/2024-07-28-18-43-58.jpg"><img class="aligncenter size-full wp-image-27379" src="https://bibica.net/wp-content/uploads/2024/07/2024-07-28-18-43-58.jpg" alt="2024 07 28 18 43 58" width="883" height="214" /></a>
+<a href="https://images.bibica.net/2024/07/2024-07-28-18-43-58.jpg"><img class="aligncenter size-full wp-image-27379" src="https://images.bibica.net/2024/07/2024-07-28-18-43-58.jpg" alt="2024 07 28 18 43 58" width="883" height="214" /></a>
 
 Tiếp theo chạy:
 ```
