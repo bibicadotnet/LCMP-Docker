@@ -19,6 +19,9 @@ Sau đó chạy
 ```
 docker-compose up -d
 ```
+## Loader.io
+UpCloud 1 GB RAM - Developer plans - €4.5/mo
+
 Hiệu năng tổng thể kém hơn bản [LCMP-Minimal](https://github.com/bibicadotnet/LCMP-Minimal) 1/6 lần
 
 <a href="https://bibica.net/wp-content/uploads/2024/07/2024-07-28-19-22-52.jpg"><img class="aligncenter size-full wp-image-27381" src="https://bibica.net/wp-content/uploads/2024/07/2024-07-28-19-22-52.jpg" alt="2024 07 28 18 48 43" /></a>
