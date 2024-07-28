@@ -13,6 +13,10 @@
 	respond @forbidden "Access denied" 403
 }
 
+www.{$SERVER_NAME} {
+    redir https://{$SERVER_NAME}{uri}
+}
+
 {$SERVER_NAME} {
 	root * /var/www/html
 	encode zstd gzip
