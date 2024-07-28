@@ -1,5 +1,11 @@
 # LCMP-Docker
 
+
+## Cài đặt
+```
+git clone https://github.com/bibicadotnet/LCMP-Docker
+cd ./LCMP-Docker
+```
 Thay đổi domain của bạn bên trong `.env` sau đó chạy
 ```
 docker-compose up -d
